@@ -298,7 +298,7 @@ Conheça a Dona Pomar
 style={{
 fontSize:"24px",
 lineHeight:"1.9",
-maxWidth:"430px"
+maxWidth:"550px"
 }}
 >
 
