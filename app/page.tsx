@@ -9,9 +9,6 @@ const bonecas = [
 ["Netinho","Autêntico e divertido."]
 ];
 
-const whatsapp =
-"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
-
 return (
 
 <main
@@ -69,54 +66,11 @@ color:"#67594A"
 >
 
 Bonecas artesanais criadas ponto a ponto
-para guardar afeto,
-memórias e histórias.
+para guardar afeto, memórias e histórias.
 
 </p>
 
 <br/>
-
-<div
-style={{
-display:"flex",
-alignItems:"center",
-gap:"12px"
-}}
->
-
-<div
-style={{
-width:"50px",
-height:"1px",
-background:"#C8B29A"
-}}
-/>
-
-<p
-style={{
-fontSize:"20px",
-fontStyle:"italic",
-color:"#8A6A4A",
-letterSpacing:"1px",
-margin:"0"
-}}
->
-
-Cheiro de café, tecido e infância.
-
-</p>
-
-<div
-style={{
-width:"50px",
-height:"1px",
-background:"#C8B29A"
-}}
-/>
-
-</div>
-
-<br/><br/>
 
 <div
 style={{
@@ -127,24 +81,31 @@ flexWrap:"wrap"
 >
 
 <a
-href={whatsapp}
+href="https://wa.me/5516982294288"
 target="_blank"
+>
+
+<button
 style={{
 background:"#6F7550",
 color:"white",
 padding:"18px 40px",
+border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-textDecoration:"none"
+cursor:"pointer"
 }}
 >
 
 ENCOMENDAR
 
+</button>
+
 </a>
 
-<a
-href="#colecao"
+<a href="#colecao">
+
+<button
 style={{
 background:"#FFF8F1",
 border:"2px solid #6F7550",
@@ -152,28 +113,36 @@ padding:"18px 40px",
 borderRadius:"40px",
 fontSize:"18px",
 color:"#6F7550",
-textDecoration:"none"
+cursor:"pointer"
 }}
 >
 
 COLEÇÃO
+
+</button>
 
 </a>
 
 <a
 href="https://instagram.com/pomardepano.oficial"
 target="_blank"
+>
+
+<button
 style={{
 background:"#C8B29A",
 color:"white",
 padding:"18px 40px",
+border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-textDecoration:"none"
+cursor:"pointer"
 }}
 >
 
 INSTAGRAM
+
+</button>
 
 </a>
 
@@ -328,8 +297,8 @@ Conheça a Dona Pomar
 <p
 style={{
 fontSize:"24px",
-lineHeight:"1.9",
-maxWidth:"550px"
+lineHeight:"2.2",
+maxWidth:"0.5px"
 }}
 >
 
@@ -400,7 +369,7 @@ WhatsApp:
 {/* BOTÃO FLUTUANTE */}
 
 <a
-href={whatsapp}
+href="https://wa.me/5516982294288"
 target="_blank"
 style={{
 position:"fixed",
