@@ -25,7 +25,7 @@ color:"#5A4D3F"
 <section
 style={{
 background:"#FFF8F1",
-padding:"100px 70px"
+padding:"60px 25px"
 }}
 >
 
@@ -34,7 +34,7 @@ style={{
 display:"flex",
 justifyContent:"center",
 alignItems:"center",
-gap:"90px",
+gap:"35px",
 flexWrap:"wrap"
 }}
 >
@@ -43,10 +43,10 @@ flexWrap:"wrap"
 
 <h1
 style={{
-fontSize:"110px",
+fontSize:"clamp(52px,14vw,110px)",
 lineHeight:"0.9",
 color:"#6F7550",
-marginBottom:"35px"
+marginBottom:"30px"
 }}
 >
 
@@ -58,9 +58,9 @@ de Pano
 
 <p
 style={{
-fontSize:"30px",
-maxWidth:"540px",
-lineHeight:"1.8",
+fontSize:"clamp(22px,5vw,30px)",
+maxWidth:"100%",
+lineHeight:"1.7",
 color:"#67594A"
 }}
 >
@@ -156,8 +156,9 @@ alt="Ritinha"
 width={430}
 height={540}
 style={{
-width:"430px",
-height:"540px",
+width:"100%",
+maxWidth:"360px",
+height:"auto",
 objectFit:"cover",
 borderRadius:"35px",
 boxShadow:"0 20px 40px rgba(0,0,0,.08)"
@@ -173,16 +174,16 @@ boxShadow:"0 20px 40px rgba(0,0,0,.08)"
 <section
 id="colecao"
 style={{
-padding:"90px 70px"
+padding:"80px 25px"
 }}
 >
 
 <h2
 style={{
-fontSize:"64px",
+fontSize:"clamp(42px,8vw,64px)",
 textAlign:"center",
 color:"#6F7550",
-marginBottom:"70px"
+marginBottom:"60px"
 }}
 >
 
@@ -194,7 +195,7 @@ Conheça os personagens do Pomar
 style={{
 display:"flex",
 justifyContent:"center",
-gap:"30px",
+gap:"25px",
 flexWrap:"wrap"
 }}
 >
@@ -259,10 +260,10 @@ style={{
 maxWidth:"1100px",
 margin:"auto",
 background:"#FFF8F1",
-padding:"60px",
+padding:"50px",
 borderRadius:"35px",
 display:"flex",
-gap:"50px",
+gap:"40px",
 alignItems:"center",
 flexWrap:"wrap"
 }}
@@ -285,7 +286,7 @@ borderRadius:"30px"
 
 <h2
 style={{
-fontSize:"62px",
+fontSize:"clamp(42px,10vw,62px)",
 color:"#6F7550"
 }}
 >
@@ -297,8 +298,8 @@ Conheça a Dona Pomar
 <p
 style={{
 fontSize:"24px",
-lineHeight:"1.9",
-maxWidth:"600px"
+lineHeight:"1.8",
+maxWidth:"700px"
 }}
 >
 
@@ -319,13 +320,11 @@ e carinho feito ponto a ponto.
 
 </section>
 
-{/* RODAPÉ */}
-
 <footer
 style={{
-marginTop:"90px",
+marginTop:"80px",
 background:"#6F7550",
-padding:"50px",
+padding:"45px",
 color:"white",
 textAlign:"center"
 }}
@@ -343,8 +342,7 @@ Pomar de Pano
 
 <p>
 
-Bonecas artesanais feitas à mão
-com afeto e memória.
+Bonecas artesanais feitas à mão.
 
 </p>
 
@@ -365,8 +363,6 @@ WhatsApp:
 </p>
 
 </footer>
-
-{/* BOTÃO FLUTUANTE */}
 
 <a
 href="https://wa.me/5516982294288"
