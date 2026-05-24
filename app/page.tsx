@@ -9,9 +9,6 @@ const bonecas = [
 ["Netinho","Autêntico e divertido."]
 ];
 
-const whatsapp =
-"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
-
 return (
 
 <main
@@ -19,48 +16,25 @@ style={{
 background:"#F6F0E7",
 minHeight:"100vh",
 fontFamily:"Georgia",
-color:"#5E5244"
+color:"#5A4D3F"
 }}
 >
-
-{/* BOTÃO FLUTUANTE */}
-
-<a
-href={whatsapp}
-target="_blank"
-style={{
-position:"fixed",
-bottom:"30px",
-right:"30px",
-width:"70px",
-height:"70px",
-background:"#6F7550",
-borderRadius:"50%",
-display:"flex",
-justifyContent:"center",
-alignItems:"center",
-fontSize:"34px",
-textDecoration:"none",
-color:"white",
-boxShadow:"0 8px 20px rgba(0,0,0,0.18)",
-zIndex:999
-}}
->
-
-💬
-
-</a>
 
 {/* HERO */}
+
+<section
+style={{
+background:"#FFF8F1",
+padding:"100px 70px"
+}}
+>
 
 <div
 style={{
 display:"flex",
 justifyContent:"center",
 alignItems:"center",
-gap:"80px",
-padding:"100px 70px",
-background:"#FFF8F1",
+gap:"90px",
 flexWrap:"wrap"
 }}
 >
@@ -84,15 +58,15 @@ de Pano
 
 <p
 style={{
-fontSize:"28px",
+fontSize:"30px",
+maxWidth:"540px",
 lineHeight:"1.8",
-maxWidth:"520px"
+color:"#67594A"
 }}
 >
 
 Bonecas artesanais criadas ponto a ponto
-para guardar afeto,
-memórias e histórias.
+para guardar afeto, memórias e histórias.
 
 </p>
 
@@ -101,12 +75,13 @@ memórias e histórias.
 <div
 style={{
 display:"flex",
-gap:"20px"
+gap:"20px",
+flexWrap:"wrap"
 }}
 >
 
 <a
-href={whatsapp}
+href="https://wa.me/5516982294288"
 target="_blank"
 >
 
@@ -114,9 +89,9 @@ target="_blank"
 style={{
 background:"#6F7550",
 color:"white",
-padding:"18px 35px",
-borderRadius:"40px",
+padding:"18px 40px",
 border:"none",
+borderRadius:"40px",
 fontSize:"18px",
 cursor:"pointer"
 }}
@@ -134,7 +109,7 @@ ENCOMENDAR
 style={{
 background:"#FFF8F1",
 border:"2px solid #6F7550",
-padding:"18px 35px",
+padding:"18px 40px",
 borderRadius:"40px",
 fontSize:"18px",
 color:"#6F7550",
@@ -148,6 +123,29 @@ COLEÇÃO
 
 </a>
 
+<a
+href="https://instagram.com/pomardepano.oficial"
+target="_blank"
+>
+
+<button
+style={{
+background:"#C8B29A",
+color:"white",
+padding:"18px 40px",
+border:"none",
+borderRadius:"40px",
+fontSize:"18px",
+cursor:"pointer"
+}}
+>
+
+INSTAGRAM
+
+</button>
+
+</a>
+
 </div>
 
 </div>
@@ -155,31 +153,36 @@ COLEÇÃO
 <Image
 src="/Bonecas/Ritinha.png"
 alt="Ritinha"
-width={420}
-height={520}
+width={430}
+height={540}
 style={{
+width:"430px",
+height:"540px",
+objectFit:"cover",
 borderRadius:"35px",
-objectFit:"cover"
+boxShadow:"0 20px 40px rgba(0,0,0,.08)"
 }}
 />
 
 </div>
 
-{/* PERSONAGENS */}
+</section>
 
-<div
+{/* COLEÇÃO */}
+
+<section
 id="colecao"
 style={{
-padding:"80px"
+padding:"90px 70px"
 }}
 >
 
 <h2
 style={{
-fontSize:"62px",
+fontSize:"64px",
 textAlign:"center",
 color:"#6F7550",
-marginBottom:"60px"
+marginBottom:"70px"
 }}
 >
 
@@ -198,24 +201,15 @@ flexWrap:"wrap"
 
 {bonecas.map(([nome,texto])=>(
 
-<a
-key={nome}
-href={whatsapp}
-target="_blank"
-style={{
-textDecoration:"none",
-color:"#5E5244"
-}}
->
-
 <div
+key={nome}
 style={{
 width:"260px",
 background:"#FFF8F1",
 padding:"20px",
 borderRadius:"30px",
-textAlign:"center",
-boxShadow:"0 5px 15px rgba(0,0,0,0.06)"
+boxShadow:"0 8px 20px rgba(0,0,0,.04)",
+textAlign:"center"
 }}
 >
 
@@ -232,7 +226,13 @@ borderRadius:"20px"
 }}
 />
 
-<h3>
+<h3
+style={{
+fontSize:"28px",
+marginTop:"15px",
+color:"#6F7550"
+}}
+>
 
 {nome}
 
@@ -246,22 +246,20 @@ borderRadius:"20px"
 
 </div>
 
-</a>
-
 ))}
 
 </div>
 
-</div>
+</section>
 
 {/* DONA POMAR */}
 
-<div
+<section
 style={{
 maxWidth:"1100px",
-margin:"80px auto",
+margin:"auto",
 background:"#FFF8F1",
-padding:"50px",
+padding:"60px",
 borderRadius:"35px",
 display:"flex",
 gap:"50px",
@@ -272,12 +270,14 @@ flexWrap:"wrap"
 
 <Image
 src="/Dona Pomar/Dona Pomar.png"
-alt="Dona Pomar"
+alt="Alessandra"
 width={220}
 height={280}
 style={{
-borderRadius:"25px",
-objectFit:"cover"
+width:"220px",
+height:"280px",
+objectFit:"cover",
+borderRadius:"30px"
 }}
 />
 
@@ -285,7 +285,7 @@ objectFit:"cover"
 
 <h2
 style={{
-fontSize:"60px",
+fontSize:"62px",
 color:"#6F7550"
 }}
 >
@@ -297,22 +297,101 @@ Conheça a Dona Pomar
 <p
 style={{
 fontSize:"24px",
-lineHeight:"1.8",
-maxWidth:"520px"
+lineHeight:"1.9",
+maxWidth:"550px"
 }}
 >
 
 Sou Alessandra.
 
-Cada boneca nasce entre linhas,
-tecidos, afeto e histórias
-costuradas com carinho.
+Cada boneca nasce entre tecidos,
+linhas, afeto e histórias
+costuradas manualmente.
+
+O Pomar de Pano carrega
+o aconchego do interior,
+cheiro de café passado
+e carinho feito ponto a ponto.
 
 </p>
 
 </div>
 
-</div>
+</section>
+
+{/* RODAPÉ */}
+
+<footer
+style={{
+marginTop:"90px",
+background:"#6F7550",
+padding:"50px",
+color:"white",
+textAlign:"center"
+}}
+>
+
+<h3
+style={{
+fontSize:"42px"
+}}
+>
+
+Pomar de Pano
+
+</h3>
+
+<p>
+
+Bonecas artesanais feitas à mão
+com afeto e memória.
+
+</p>
+
+<br/>
+
+<p>
+
+Instagram:
+@pomardepano.oficial
+
+</p>
+
+<p>
+
+WhatsApp:
+(16) 98229-4288
+
+</p>
+
+</footer>
+
+{/* BOTÃO FLUTUANTE */}
+
+<a
+href="https://wa.me/5516982294288"
+target="_blank"
+style={{
+position:"fixed",
+bottom:"25px",
+right:"25px",
+width:"70px",
+height:"70px",
+background:"#6F7550",
+borderRadius:"50%",
+display:"flex",
+justifyContent:"center",
+alignItems:"center",
+fontSize:"32px",
+textDecoration:"none",
+color:"white",
+boxShadow:"0 12px 25px rgba(0,0,0,.2)"
+}}
+>
+
+💬
+
+</a>
 
 </main>
 
