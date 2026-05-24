@@ -9,6 +9,9 @@ const bonecas = [
 ["Netinho","Autêntico e divertido."]
 ];
 
+const whatsapp =
+"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
+
 return (
 
 <main
@@ -19,6 +22,34 @@ fontFamily:"Georgia",
 color:"#5E5244"
 }}
 >
+
+{/* BOTÃO FLUTUANTE */}
+
+<a
+href={whatsapp}
+target="_blank"
+style={{
+position:"fixed",
+bottom:"30px",
+right:"30px",
+width:"70px",
+height:"70px",
+background:"#6F7550",
+borderRadius:"50%",
+display:"flex",
+justifyContent:"center",
+alignItems:"center",
+fontSize:"34px",
+textDecoration:"none",
+color:"white",
+boxShadow:"0 8px 20px rgba(0,0,0,0.18)",
+zIndex:999
+}}
+>
+
+💬
+
+</a>
 
 {/* HERO */}
 
@@ -74,6 +105,11 @@ gap:"20px"
 }}
 >
 
+<a
+href={whatsapp}
+target="_blank"
+>
+
 <button
 style={{
 background:"#6F7550",
@@ -81,13 +117,18 @@ color:"white",
 padding:"18px 35px",
 borderRadius:"40px",
 border:"none",
-fontSize:"18px"
+fontSize:"18px",
+cursor:"pointer"
 }}
 >
 
 ENCOMENDAR
 
 </button>
+
+</a>
+
+<a href="#colecao">
 
 <button
 style={{
@@ -96,13 +137,16 @@ border:"2px solid #6F7550",
 padding:"18px 35px",
 borderRadius:"40px",
 fontSize:"18px",
-color:"#6F7550"
+color:"#6F7550",
+cursor:"pointer"
 }}
 >
 
 COLEÇÃO
 
 </button>
+
+</a>
 
 </div>
 
@@ -124,6 +168,7 @@ objectFit:"cover"
 {/* PERSONAGENS */}
 
 <div
+id="colecao"
 style={{
 padding:"80px"
 }}
@@ -153,14 +198,24 @@ flexWrap:"wrap"
 
 {bonecas.map(([nome,texto])=>(
 
-<div
+<a
 key={nome}
+href={whatsapp}
+target="_blank"
+style={{
+textDecoration:"none",
+color:"#5E5244"
+}}
+>
+
+<div
 style={{
 width:"260px",
 background:"#FFF8F1",
 padding:"20px",
 borderRadius:"30px",
-textAlign:"center"
+textAlign:"center",
+boxShadow:"0 5px 15px rgba(0,0,0,0.06)"
 }}
 >
 
@@ -190,6 +245,8 @@ borderRadius:"20px"
 </p>
 
 </div>
+
+</a>
 
 ))}
 
