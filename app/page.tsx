@@ -9,6 +9,9 @@ const bonecas = [
 ["Netinho","Autêntico e divertido."]
 ];
 
+const whatsapp =
+"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
+
 return (
 
 <main
@@ -25,7 +28,7 @@ color:"#5A4D3F"
 <section
 style={{
 background:"#FFF8F1",
-padding:"60px 70px 100px"
+padding:"100px 70px"
 }}
 >
 
@@ -66,38 +69,35 @@ color:"#67594A"
 >
 
 Bonecas artesanais criadas ponto a ponto
-para guardar afeto, memórias e histórias.
+para guardar afeto,
+memórias e histórias.
 
 </p>
+
+<br/>
 
 <div
 style={{
 display:"flex",
-flexDirection:"column",
-alignItems:"flex-start",
-gap:"10px",
-marginTop:"20px"
+alignItems:"center",
+gap:"12px"
 }}
 >
 
-<p
+<div
 style={{
-fontSize:"18px",
-color:"#B89A78",
-letterSpacing:"3px",
-margin:"0"
+width:"50px",
+height:"1px",
+background:"#C8B29A"
 }}
->
-
-🌿 ─── ☕ ─── 🌿
-
-</p>
+/>
 
 <p
 style={{
 fontSize:"20px",
 fontStyle:"italic",
 color:"#8A6A4A",
+letterSpacing:"1px",
 margin:"0"
 }}
 >
@@ -106,22 +106,17 @@ Cheiro de café, tecido e infância.
 
 </p>
 
-<p
+<div
 style={{
-marginTop:"10px",
-fontSize:"16px",
-color:"#9B8B78",
-letterSpacing:"1px"
+width:"50px",
+height:"1px",
+background:"#C8B29A"
 }}
->
-
-🧺 Linhas • tecidos • memórias
-
-</p>
+/>
 
 </div>
 
-<br/>
+<br/><br/>
 
 <div
 style={{
@@ -132,32 +127,24 @@ flexWrap:"wrap"
 >
 
 <a
-href="https://wa.me/5516982294288"
+href={whatsapp}
 target="_blank"
->
-
-<button
 style={{
 background:"#6F7550",
 color:"white",
 padding:"18px 40px",
-border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-cursor:"pointer",
-boxShadow:"0 8px 18px rgba(111,117,80,.15)"
+textDecoration:"none"
 }}
 >
 
 ENCOMENDAR
 
-</button>
-
 </a>
 
-<a href="#colecao">
-
-<button
+<a
+href="#colecao"
 style={{
 background:"#FFF8F1",
 border:"2px solid #6F7550",
@@ -165,38 +152,28 @@ padding:"18px 40px",
 borderRadius:"40px",
 fontSize:"18px",
 color:"#6F7550",
-cursor:"pointer",
-boxShadow:"0 8px 18px rgba(111,117,80,.15)"
+textDecoration:"none"
 }}
 >
 
 COLEÇÃO
-
-</button>
 
 </a>
 
 <a
 href="https://instagram.com/pomardepano.oficial"
 target="_blank"
->
-
-<button
 style={{
 background:"#C8B29A",
 color:"white",
 padding:"18px 40px",
-border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-cursor:"pointer",
-boxShadow:"0 8px 18px rgba(111,117,80,.15)"
+textDecoration:"none"
 }}
 >
 
 INSTAGRAM
-
-</button>
 
 </a>
 
@@ -214,10 +191,7 @@ width:"430px",
 height:"540px",
 objectFit:"cover",
 borderRadius:"35px",
-padding:"10px",
-background:"#FFF8F1",
-border:"1px solid #E8DED1",
-boxShadow:"0 25px 45px rgba(92,72,50,.12)"
+boxShadow:"0 20px 40px rgba(0,0,0,.08)"
 }}
 />
 
@@ -265,7 +239,7 @@ width:"260px",
 background:"#FFF8F1",
 padding:"20px",
 borderRadius:"30px",
-boxShadow:"0 10px 25px rgba(92,72,50,.06)",
+boxShadow:"0 8px 20px rgba(0,0,0,.04)",
 textAlign:"center"
 }}
 >
@@ -321,8 +295,7 @@ borderRadius:"35px",
 display:"flex",
 gap:"50px",
 alignItems:"center",
-flexWrap:"wrap",
-boxShadow:"0 12px 30px rgba(92,72,50,.05)"
+flexWrap:"wrap"
 }}
 >
 
@@ -377,6 +350,8 @@ e carinho feito ponto a ponto.
 
 </section>
 
+{/* RODAPÉ */}
+
 <footer
 style={{
 marginTop:"90px",
@@ -422,8 +397,10 @@ WhatsApp:
 
 </footer>
 
+{/* BOTÃO FLUTUANTE */}
+
 <a
-href="https://wa.me/5516982294288"
+href={whatsapp}
 target="_blank"
 style={{
 position:"fixed",
@@ -443,7 +420,7 @@ boxShadow:"0 12px 25px rgba(0,0,0,.2)"
 }}
 >
 
-🟢
+💬
 
 </a>
 
