@@ -300,7 +300,7 @@ flexWrap:"wrap"
 >
 
 <Image
-src="/Dona Pomar/Dona Pomar.png"
+src="/Dona Pomar 2.png"
 alt="Alessandra"
 width={220}
 height={280}
