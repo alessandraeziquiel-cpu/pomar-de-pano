@@ -1,206 +1,321 @@
+import Image from "next/image";
+
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-[#FAF7F2]">
 
-      <section className="max-w-6xl mx-auto px-8 py-24">
+const bonecas = [
+["Ritinha","Delicada e cheia de afeto."],
+["Clara","Doce e acolhedora."],
+["Maria","Leve e encantadora."],
+["Netinho","Autêntico e divertido."]
+];
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+const whatsapp =
+"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
 
-          <div>
+return (
 
-            <span
-              className="
-              inline-block
-              mb-6
-              text-[#C46A4A]
-              uppercase
-              tracking-[3px]
-              text-sm
-              "
-            >
-              Do pomar pro seu abraço
-            </span>
+<main
+style={{
+background:"#F6F0E7",
+minHeight:"100vh",
+fontFamily:"Georgia",
+color:"#5E5244"
+}}
+>
 
-            <h1
-              className="
-              text-[90px]
-              leading-[0.9]
-              text-[#4F584B]
-              mb-10
-              "
-            >
-              Pomar
-              <br />
-              de Pano
-            </h1>
+{/* BOTÃO FLUTUANTE */}
 
-            <p
-              className="
-              text-3xl
-              text-[#6E6A66]
-              leading-relaxed
-              mb-10
-              "
-            >
-              Bonecas artesanais criadas ponto a ponto
-              para guardar afeto,
-              memórias e histórias.
-            </p>
+<a
+href={whatsapp}
+target="_blank"
+style={{
+position:"fixed",
+bottom:"30px",
+right:"30px",
+width:"70px",
+height:"70px",
+background:"#6F7550",
+borderRadius:"50%",
+display:"flex",
+justifyContent:"center",
+alignItems:"center",
+fontSize:"34px",
+textDecoration:"none",
+color:"white",
+boxShadow:"0 8px 20px rgba(0,0,0,0.18)",
+zIndex:999
+}}
+>
 
-            <div className="flex gap-5 flex-wrap">
+💬
 
-              <a
-                href="https://wa.me/5516982294288"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                bg-[#A8BFA3]
-                text-white
-                px-8
-                py-4
-                rounded-full
-                text-xl
-                shadow-lg
-                "
-              >
-                ENCOMENDAR
-              </a>
+</a>
 
-              <a
-                href="#instagram"
-                className="
-                border
-                border-[#A8BFA3]
-                px-8
-                py-4
-                rounded-full
-                text-xl
-                text-[#4F584B]
-                "
-              >
-                INSTAGRAM
-              </a>
+{/* HERO */}
 
-            </div>
+<div
+style={{
+display:"flex",
+justifyContent:"center",
+alignItems:"center",
+gap:"80px",
+padding:"100px 70px",
+background:"#FFF8F1",
+flexWrap:"wrap"
+}}
+>
 
-          </div>
+<div>
 
-          <div>
+<h1
+style={{
+fontSize:"110px",
+lineHeight:"0.9",
+color:"#6F7550",
+marginBottom:"35px"
+}}
+>
 
-            <img
-              src="/boneca-capa.jpg"
-              alt="Boneca Pomar de Pano"
-              className="
-              rounded-[40px]
-              w-full
-              object-cover
-              shadow-2xl
-              "
-            />
+Pomar
+<br/>
+de Pano
 
-          </div>
+</h1>
 
-        </div>
+<p
+style={{
+fontSize:"28px",
+lineHeight:"1.8",
+maxWidth:"520px"
+}}
+>
 
-      </section>
+Bonecas artesanais criadas ponto a ponto
+para guardar afeto,
+memórias e histórias.
 
+</p>
 
-      <section
-        id="instagram"
-        className="
-        max-w-5xl
-        mx-auto
-        px-8
-        pb-24
-        "
-      >
+<br/>
 
-        <div
-          className="
-          bg-[#F5E9DA]
-          rounded-[40px]
-          p-12
-          text-center
-          "
-        >
+<div
+style={{
+display:"flex",
+gap:"20px"
+}}
+>
 
-          <h2
-            className="
-            text-5xl
-            text-[#4F584B]
-            mb-6
-            "
-          >
-            Instagram
-          </h2>
+<a
+href={whatsapp}
+target="_blank"
+>
 
-          <p
-            className="
-            text-2xl
-            text-[#6E6A66]
-            mb-10
-            "
-          >
-            Acompanhe o universo Pomar de Pano
-          </p>
+<button
+style={{
+background:"#6F7550",
+color:"white",
+padding:"18px 35px",
+borderRadius:"40px",
+border:"none",
+fontSize:"18px",
+cursor:"pointer"
+}}
+>
 
-          <img
-            src="https://images.unsplash.com/photo-1519682577862-22b62b24e493"
-            alt="Instagram Pomar de Pano"
-            className="
-            rounded-[30px]
-            w-full
-            mb-8
-            "
-          />
+ENCOMENDAR
 
-          <a
-            href="https://instagram.com/pomardepano.oficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            inline-block
-            bg-[#C97C7C]
-            text-white
-            px-10
-            py-5
-            rounded-full
-            text-xl
-            shadow-lg
-            "
-          >
-            @pomardepano.oficial
-          </a>
+</button>
 
-        </div>
+</a>
 
-      </section>
+<a href="#colecao">
 
+<button
+style={{
+background:"#FFF8F1",
+border:"2px solid #6F7550",
+padding:"18px 35px",
+borderRadius:"40px",
+fontSize:"18px",
+color:"#6F7550",
+cursor:"pointer"
+}}
+>
 
-      <a
-        href="https://wa.me/5516982294288"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-        fixed
-        bottom-6
-        right-6
-        w-16
-        h-16
-        rounded-full
-        bg-[#25D366]
-        shadow-2xl
-        flex
-        items-center
-        justify-center
-        text-white
-        text-3xl
-        z-50
-        "
-      >
-        ✆
-      </a>
+COLEÇÃO
 
-    </main>
-  );
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+<Image
+src="/Bonecas/Ritinha.png"
+alt="Ritinha"
+width={420}
+height={520}
+style={{
+borderRadius:"35px",
+objectFit:"cover"
+}}
+/>
+
+</div>
+
+{/* PERSONAGENS */}
+
+<div
+id="colecao"
+style={{
+padding:"80px"
+}}
+>
+
+<h2
+style={{
+fontSize:"62px",
+textAlign:"center",
+color:"#6F7550",
+marginBottom:"60px"
+}}
+>
+
+Conheça os personagens do Pomar
+
+</h2>
+
+<div
+style={{
+display:"flex",
+justifyContent:"center",
+gap:"30px",
+flexWrap:"wrap"
+}}
+>
+
+{bonecas.map(([nome,texto])=>(
+
+<a
+key={nome}
+href={whatsapp}
+target="_blank"
+style={{
+textDecoration:"none",
+color:"#5E5244"
+}}
+>
+
+<div
+style={{
+width:"260px",
+background:"#FFF8F1",
+padding:"20px",
+borderRadius:"30px",
+textAlign:"center",
+boxShadow:"0 5px 15px rgba(0,0,0,0.06)"
+}}
+>
+
+<Image
+src={`/Bonecas/${nome}.png`}
+alt={nome}
+width={220}
+height={260}
+style={{
+width:"220px",
+height:"260px",
+objectFit:"cover",
+borderRadius:"20px"
+}}
+/>
+
+<h3>
+
+{nome}
+
+</h3>
+
+<p>
+
+{texto}
+
+</p>
+
+</div>
+
+</a>
+
+))}
+
+</div>
+
+</div>
+
+{/* DONA POMAR */}
+
+<div
+style={{
+maxWidth:"1100px",
+margin:"80px auto",
+background:"#FFF8F1",
+padding:"50px",
+borderRadius:"35px",
+display:"flex",
+gap:"50px",
+alignItems:"center",
+flexWrap:"wrap"
+}}
+>
+
+<Image
+src="/Dona Pomar/Dona Pomar.png"
+alt="Dona Pomar"
+width={220}
+height={280}
+style={{
+borderRadius:"25px",
+objectFit:"cover"
+}}
+/>
+
+<div>
+
+<h2
+style={{
+fontSize:"60px",
+color:"#6F7550"
+}}
+>
+
+Conheça a Dona Pomar
+
+</h2>
+
+<p
+style={{
+fontSize:"24px",
+lineHeight:"1.8",
+maxWidth:"520px"
+}}
+>
+
+Sou Alessandra.
+
+Cada boneca nasce entre linhas,
+tecidos, afeto e histórias
+costuradas com carinho.
+
+</p>
+
+</div>
+
+</div>
+
+</main>
+
+);
+
 }
