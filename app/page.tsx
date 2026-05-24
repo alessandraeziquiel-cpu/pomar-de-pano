@@ -9,6 +9,9 @@ const bonecas = [
 ["Netinho","Autêntico e divertido."]
 ];
 
+const whatsapp =
+"https://wa.me/5516982294288?text=Olá%20vim%20pelo%20site%20da%20Pomar%20de%20Pano%20e%20quero%20fazer%20uma%20encomenda";
+
 return (
 
 <main
@@ -66,11 +69,54 @@ color:"#67594A"
 >
 
 Bonecas artesanais criadas ponto a ponto
-para guardar afeto, memórias e histórias.
+para guardar afeto,
+memórias e histórias.
 
 </p>
 
 <br/>
+
+<div
+style={{
+display:"flex",
+alignItems:"center",
+gap:"12px"
+}}
+>
+
+<div
+style={{
+width:"50px",
+height:"1px",
+background:"#C8B29A"
+}}
+/>
+
+<p
+style={{
+fontSize:"20px",
+fontStyle:"italic",
+color:"#8A6A4A",
+letterSpacing:"1px",
+margin:"0"
+}}
+>
+
+Cheiro de café, tecido e infância.
+
+</p>
+
+<div
+style={{
+width:"50px",
+height:"1px",
+background:"#C8B29A"
+}}
+/>
+
+</div>
+
+<br/><br/>
 
 <div
 style={{
@@ -81,31 +127,24 @@ flexWrap:"wrap"
 >
 
 <a
-href="https://wa.me/5516982294288"
+href={whatsapp}
 target="_blank"
->
-
-<button
 style={{
 background:"#6F7550",
 color:"white",
 padding:"18px 40px",
-border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-cursor:"pointer"
+textDecoration:"none"
 }}
 >
 
 ENCOMENDAR
 
-</button>
-
 </a>
 
-<a href="#colecao">
-
-<button
+<a
+href="#colecao"
 style={{
 background:"#FFF8F1",
 border:"2px solid #6F7550",
@@ -113,36 +152,28 @@ padding:"18px 40px",
 borderRadius:"40px",
 fontSize:"18px",
 color:"#6F7550",
-cursor:"pointer"
+textDecoration:"none"
 }}
 >
 
 COLEÇÃO
-
-</button>
 
 </a>
 
 <a
 href="https://instagram.com/pomardepano.oficial"
 target="_blank"
->
-
-<button
 style={{
 background:"#C8B29A",
 color:"white",
 padding:"18px 40px",
-border:"none",
 borderRadius:"40px",
 fontSize:"18px",
-cursor:"pointer"
+textDecoration:"none"
 }}
 >
 
 INSTAGRAM
-
-</button>
 
 </a>
 
@@ -369,7 +400,7 @@ WhatsApp:
 {/* BOTÃO FLUTUANTE */}
 
 <a
-href="https://wa.me/5516982294288"
+href={whatsapp}
 target="_blank"
 style={{
 position:"fixed",
