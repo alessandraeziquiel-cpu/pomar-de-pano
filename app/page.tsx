@@ -1,145 +1,100 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#F7F2EC] relative overflow-hidden">
+    <main className="min-h-screen bg-[#F7F2EC] text-[#6A5648] overflow-hidden">
 
-      {/* FLORES DECORATIVAS */}
+      {/* ELEMENTOS DECORATIVOS */}
+      <div className="absolute top-12 left-10 opacity-20 text-5xl">
+        🌸
+      </div>
 
-      <img
-        src="/flor-1.png"
-        alt=""
-        className="
-        absolute
-        top-10
-        left-10
-        w-20
-        opacity-30
-        pointer-events-none
-        "
-      />
+      <div className="absolute top-24 right-16 opacity-20 text-4xl">
+        🪡
+      </div>
 
-      <img
-        src="/flor-2.png"
-        alt=""
-        className="
-        absolute
-        top-24
-        right-16
-        w-16
-        opacity-25
-        pointer-events-none
-        "
-      />
+      <div className="absolute bottom-20 left-24 opacity-20 text-3xl">
+        🤎
+      </div>
 
-      <img
-        src="/flor-3.png"
-        alt=""
-        className="
-        absolute
-        bottom-20
-        left-24
-        w-14
-        opacity-20
-        pointer-events-none
-        "
-      />
-
-      <section className="max-w-6xl mx-auto px-8 py-24">
+      {/* HERO */}
+      <section className="max-w-6xl mx-auto px-8 py-24 relative">
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
           {/* TEXTO */}
+          <div className="space-y-8">
 
-          <div>
-
-            <span
-              className="
-              inline-block
-              mb-6
-              text-[#A7B09A]
-              bg-white
-              px-5
-              py-2
-              rounded-full
-              shadow-sm
-              tracking-widest
-              text-sm
-              "
-            >
-              BONECAS ARTESANAIS
+            <span className="
+            inline-block
+            px-4
+            py-2
+            rounded-full
+            bg-[#ECE3D8]
+            text-sm
+            tracking-[0.2em]
+            uppercase
+            ">
+              Bonecas artesanais
             </span>
 
-            <h1
-              className="
-              text-6xl
-              md:text-8xl
-              leading-none
-              text-[#6A5648]
-              font-serif
-              mb-8
-              "
-            >
+            <h1 className="
+            text-6xl
+            md:text-8xl
+            leading-none
+            font-light
+            ">
               Pomar
               <br />
               de Pano
             </h1>
 
-            <p
-              className="
-              text-[#6A5648]
-              text-xl
-              leading-10
-              max-w-xl
-              mb-10
-              "
-            >
+            <p className="
+            text-xl
+            leading-10
+            max-w-xl
+            text-[#7A6658]
+            ">
               Bonecas artesanais criadas ponto a ponto
               para guardar afeto, memórias e histórias.
             </p>
 
             <div className="flex flex-wrap gap-5">
 
-              <button
-                className="
-                bg-[#A7B09A]
-                text-white
-                px-8
-                py-4
-                rounded-full
-                shadow-md
-                hover:scale-105
-                transition
-                "
-              >
+              <button className="
+              px-8
+              py-4
+              rounded-full
+              bg-[#A7B09A]
+              text-white
+              hover:scale-105
+              duration-300
+              shadow-md
+              ">
                 ENCOMENDAR
               </button>
 
-              <button
-                className="
-                border
-                border-[#D7B5AF]
-                text-[#6A5648]
-                px-8
-                py-4
-                rounded-full
-                hover:bg-white
-                transition
-                "
-              >
+              <button className="
+              px-8
+              py-4
+              rounded-full
+              border
+              border-[#D7B5AF]
+              bg-white
+              hover:bg-[#F3ECE5]
+              duration-300
+              ">
                 COLEÇÃO
               </button>
 
-              <button
-                className="
-                bg-[#D7B5AF]
-                text-white
-                px-8
-                py-4
-                rounded-full
-                shadow-sm
-                hover:scale-105
-                transition
-                "
-              >
+              <button className="
+              px-8
+              py-4
+              rounded-full
+              bg-[#D7B5AF]
+              text-white
+              hover:scale-105
+              duration-300
+              shadow-md
+              ">
                 INSTAGRAM
               </button>
 
@@ -147,38 +102,61 @@ export default function Home() {
 
           </div>
 
-          {/* FOTO */}
-
+          {/* IMAGEM */}
           <div className="relative">
 
-            <div
-              className="
-              absolute
-              -top-6
-              -left-6
-              w-full
-              h-full
-              rounded-[40px]
-              border
-              border-[#D7B5AF]
-              opacity-40
-              "
-            />
+            <div className="
+            bg-[#EFE7DD]
+            rounded-[40px]
+            p-6
+            shadow-xl
+            border
+            border-[#E6DCCF]
+            ">
 
-            <img
-              src="/boneca.jpg"
-              alt="Boneca Pomar de Pano"
-              className="
-              rounded-[40px]
-              shadow-xl
-              object-cover
-              w-full
-              relative
-              z-10
-              "
-            />
+              <img
+                src="/boneca.jpg"
+                alt="Boneca artesanal Pomar de Pano"
+                className="
+                rounded-[30px]
+                object-cover
+                w-full
+                "
+              />
+
+            </div>
 
           </div>
+
+        </div>
+
+      </section>
+
+      {/* FRASE AFETIVA */}
+      <section className="
+      max-w-4xl
+      mx-auto
+      px-8
+      pb-24
+      text-center
+      ">
+
+        <div className="
+        bg-[#EFE7DD]
+        rounded-[40px]
+        p-12
+        shadow-sm
+        ">
+
+          <p className="
+          text-2xl
+          italic
+          leading-10
+          text-[#6A5648]
+          ">
+            Entre linhas, tecidos e delicadezas,
+            cada boneca nasce para guardar memórias.
+          </p>
 
         </div>
 
