@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Bonecas artesanais criadas ponto a ponto para guardar afeto, memórias e histórias.",
   verification: {
-    google: "vCBy5Qc_RjtJ0",
+    google: "ivCBy5Qc_RjtJ0",
   },
 };
 
