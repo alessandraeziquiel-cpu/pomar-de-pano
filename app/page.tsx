@@ -1,264 +1,191 @@
-import Image from "next/image";
-
 export default function Home() {
+  return (
+    <main className="min-h-screen bg-[#FCFAF6]">
 
-const bonecas = [
-["Ritinha","Delicada e cheia de afeto."],
-["Clara","Doce e acolhedora."],
-["Maria","Leve e encantadora."],
-["Netinho","Autêntico e divertido."]
-];
+      <section className="max-w-6xl mx-auto px-8 py-20">
 
-return (
+        <div className="grid md:grid-cols-2 gap-14 items-center">
 
-<main
-style={{
-background:"#F6F0E7",
-minHeight:"100vh",
-fontFamily:"Georgia",
-color:"#5E5244"
-}}
->
+          <div>
 
-{/* HERO */}
+            <h1 className="text-[90px] leading-[0.9] text-[#4F584B] mb-10">
+              Pomar
+              <br />
+              de Pano
+            </h1>
 
-<div
-style={{
-display:"flex",
-justifyContent:"center",
-alignItems:"center",
-gap:"80px",
-padding:"100px 70px",
-background:"#FFF8F1",
-flexWrap:"wrap"
-}}
->
+            <p className="text-3xl text-[#666] leading-relaxed mb-10">
+              Bonecas artesanais criadas ponto a ponto
+              para guardar afeto, memórias e histórias.
+            </p>
 
-<div>
+            <div className="flex gap-5 flex-wrap">
 
-<h1
-style={{
-fontSize:"110px",
-lineHeight:"0.9",
-color:"#6F7550",
-marginBottom:"35px"
-}}
->
+              <a
+                href="https://wa.me/5516982294288"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                bg-[#9BA795]
+                text-white
+                px-8
+                py-4
+                rounded-full
+                text-xl
+                "
+              >
+                ENCOMENDAR
+              </a>
 
-Pomar
-<br/>
-de Pano
+              <a
+                href="#colecao"
+                className="
+                border
+                border-[#7E8577]
+                px-8
+                py-4
+                rounded-full
+                text-xl
+                text-[#5A6154]
+                "
+              >
+                COLEÇÃO
+              </a>
 
-</h1>
+            </div>
 
-<p
-style={{
-fontSize:"28px",
-lineHeight:"1.8",
-maxWidth:"520px"
-}}
->
+          </div>
 
-Bonecas artesanais criadas ponto a ponto
-para guardar afeto,
-memórias e histórias.
+          <div>
 
-</p>
+            <img
+              src="/boneca-capa.jpg"
+              alt="Boneca Pomar de Pano"
+              className="
+              rounded-[40px]
+              w-full
+              object-cover
+              shadow-xl
+              "
+            />
 
-<br/>
+          </div>
 
-<div
-style={{
-display:"flex",
-gap:"20px"
-}}
->
+        </div>
 
-<button
-style={{
-background:"#6F7550",
-color:"white",
-padding:"18px 35px",
-borderRadius:"40px",
-border:"none",
-fontSize:"18px"
-}}
->
+      </section>
 
-ENCOMENDAR
+      <section
+        id="colecao"
+        className="
+        max-w-6xl
+        mx-auto
+        px-8
+        py-24
+        "
+      >
 
-</button>
+        <h2 className="text-6xl text-[#4F584B] mb-6">
+          Coleção Pomar de Pano
+        </h2>
 
-<button
-style={{
-background:"#FFF8F1",
-border:"2px solid #6F7550",
-padding:"18px 35px",
-borderRadius:"40px",
-fontSize:"18px",
-color:"#6F7550"
-}}
->
+        <p className="text-2xl text-[#777] mb-14">
+          Bonecas criadas para guardar memórias,
+          afeto e histórias especiais.
+        </p>
 
-COLEÇÃO
+        <div className="grid md:grid-cols-2 gap-8">
 
-</button>
+          <div className="bg-[#F4EFE7] p-10 rounded-3xl">
+            <h3 className="text-3xl mb-4">
+              Bonecas afetivas
+            </h3>
 
-</div>
+            <p>
+              Feitas ponto a ponto para histórias especiais.
+            </p>
+          </div>
 
-</div>
+          <div className="bg-[#F4EFE7] p-10 rounded-3xl">
+            <h3 className="text-3xl mb-4">
+              Bonecas personalizadas
+            </h3>
 
-<Image
-src="/Bonecas/Ritinha.png"
-alt="Ritinha"
-width={420}
-height={520}
-style={{
-borderRadius:"35px",
-objectFit:"cover"
-}}
-/>
+            <p>
+              Criadas sob encomenda.
+            </p>
+          </div>
 
-</div>
+          <div className="bg-[#F4EFE7] p-10 rounded-3xl">
+            <h3 className="text-3xl mb-4">
+              Coleção floral
+            </h3>
 
-{/* PERSONAGENS */}
+            <p>
+              Tecidos delicados e acabamento artesanal.
+            </p>
+          </div>
 
-<div
-style={{
-padding:"80px"
-}}
->
+          <div className="bg-[#F4EFE7] p-10 rounded-3xl">
+            <h3 className="text-3xl mb-4">
+              Bonecas memória
+            </h3>
 
-<h2
-style={{
-fontSize:"62px",
-textAlign:"center",
-color:"#6F7550",
-marginBottom:"60px"
-}}
->
+            <p>
+              Afeto transformado em lembrança.
+            </p>
+          </div>
 
-Conheça os personagens do Pomar
+        </div>
 
-</h2>
+      </section>
 
-<div
-style={{
-display:"flex",
-justifyContent:"center",
-gap:"30px",
-flexWrap:"wrap"
-}}
->
+      <section className="text-center py-20">
 
-{bonecas.map(([nome,texto])=>(
+        <h3 className="text-4xl text-[#4F584B] mb-5">
+          Acompanhe o Pomar de Pano
+        </h3>
 
-<div
-key={nome}
-style={{
-width:"260px",
-background:"#FFF8F1",
-padding:"20px",
-borderRadius:"30px",
-textAlign:"center"
-}}
->
+        <a
+          href="https://instagram.com/pomardepano"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+          text-2xl
+          text-[#7B856F]
+          "
+        >
+          Instagram @pomardepano
+        </a>
 
-<Image
-src={`/Bonecas/${nome}.png`}
-alt={nome}
-width={220}
-height={260}
-style={{
-width:"220px",
-height:"260px",
-objectFit:"cover",
-borderRadius:"20px"
-}}
-/>
+      </section>
 
-<h3>
+      <a
+        href="https://wa.me/5516982294288"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+        fixed
+        bottom-6
+        right-6
+        w-16
+        h-16
+        rounded-full
+        bg-[#9FD39B]
+        shadow-xl
+        flex
+        items-center
+        justify-center
+        z-50
+        "
+      >
 
-{nome}
+        <span className="text-white text-3xl">
+          ✆
+        </span>
 
-</h3>
+      </a>
 
-<p>
-
-{texto}
-
-</p>
-
-</div>
-
-))}
-
-</div>
-
-</div>
-
-{/* DONA POMAR */}
-
-<div
-style={{
-maxWidth:"1100px",
-margin:"80px auto",
-background:"#FFF8F1",
-padding:"50px",
-borderRadius:"35px",
-display:"flex",
-gap:"50px",
-alignItems:"center",
-flexWrap:"wrap"
-}}
->
-
-<Image
-src="/Dona Pomar/Dona Pomar.png"
-alt="Dona Pomar"
-width={220}
-height={280}
-style={{
-borderRadius:"25px",
-objectFit:"cover"
-}}
-/>
-
-<div>
-
-<h2
-style={{
-fontSize:"60px",
-color:"#6F7550"
-}}
->
-
-Conheça a Dona Pomar
-
-</h2>
-
-<p
-style={{
-fontSize:"24px",
-lineHeight:"1.8",
-maxWidth:"520px"
-}}
->
-
-Sou Alessandra.
-
-Cada boneca nasce entre linhas,
-tecidos, afeto e histórias
-costuradas com carinho.
-
-</p>
-
-</div>
-
-</div>
-
-</main>
-
-);
-
+    </main>
+  );
 }
