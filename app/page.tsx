@@ -39,21 +39,19 @@ Conheça a Dona Pomar
 @media (max-width:768px){
 
 .personagensTitulo{
-font-size:28px !important;
+font-size:20px !important;
 line-height:1.2 !important;
-max-width:260px;
-margin:auto;
-text-align:center;
-margin-bottom:28px;
+max-width:220px !important;
+margin:0 auto 22px auto !important;
+text-align:center !important;
 }
 
 .donaTitulo{
-font-size:30px !important;
+font-size:22px !important;
 line-height:1.2 !important;
-max-width:260px;
-margin:auto;
-text-align:center;
-margin-bottom:24px;
+max-width:220px !important;
+margin:0 auto 18px auto !important;
+text-align:center !important;
 }
 
 }
