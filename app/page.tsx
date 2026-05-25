@@ -25,7 +25,7 @@ color:"#5A4D3F"
 <section
 style={{
 background:"#FFF8F1",
-padding:"60px 25px"
+padding:"45px 25px"
 }}
 >
 
@@ -34,7 +34,7 @@ style={{
 display:"flex",
 justifyContent:"center",
 alignItems:"center",
-gap:"35px",
+gap:"25px",
 flexWrap:"wrap"
 }}
 >
@@ -43,10 +43,11 @@ flexWrap:"wrap"
 
 <h1
 style={{
-fontSize:"clamp(52px,14vw,110px)",
+fontSize:"clamp(60px,14vw,110px)",
 lineHeight:"0.9",
 color:"#6F7550",
-marginBottom:"30px"
+marginBottom:"25px",
+textAlign:"center"
 }}
 >
 
@@ -59,9 +60,10 @@ de Pano
 <p
 style={{
 fontSize:"clamp(22px,5vw,30px)",
-maxWidth:"100%",
-lineHeight:"1.7",
-color:"#67594A"
+maxWidth:"540px",
+lineHeight:"1.8",
+color:"#67594A",
+textAlign:"center"
 }}
 >
 
@@ -75,8 +77,9 @@ para guardar afeto, memórias e histórias.
 <div
 style={{
 display:"flex",
-gap:"20px",
-flexWrap:"wrap"
+gap:"15px",
+flexWrap:"wrap",
+justifyContent:"center"
 }}
 >
 
@@ -89,11 +92,10 @@ target="_blank"
 style={{
 background:"#6F7550",
 color:"white",
-padding:"18px 40px",
+padding:"18px 35px",
 border:"none",
 borderRadius:"40px",
-fontSize:"18px",
-cursor:"pointer"
+fontSize:"18px"
 }}
 >
 
@@ -109,11 +111,10 @@ ENCOMENDAR
 style={{
 background:"#FFF8F1",
 border:"2px solid #6F7550",
-padding:"18px 40px",
+padding:"18px 35px",
 borderRadius:"40px",
 fontSize:"18px",
-color:"#6F7550",
-cursor:"pointer"
+color:"#6F7550"
 }}
 >
 
@@ -132,11 +133,10 @@ target="_blank"
 style={{
 background:"#C8B29A",
 color:"white",
-padding:"18px 40px",
+padding:"18px 35px",
 border:"none",
 borderRadius:"40px",
-fontSize:"18px",
-cursor:"pointer"
+fontSize:"18px"
 }}
 >
 
@@ -157,7 +157,7 @@ width={430}
 height={540}
 style={{
 width:"100%",
-maxWidth:"360px",
+maxWidth:"320px",
 height:"auto",
 objectFit:"cover",
 borderRadius:"35px",
@@ -174,16 +174,16 @@ boxShadow:"0 20px 40px rgba(0,0,0,.08)"
 <section
 id="colecao"
 style={{
-padding:"80px 25px"
+padding:"90px 70px"
 }}
 >
 
 <h2
 style={{
-fontSize:"clamp(42px,8vw,64px)",
+fontSize:"64px",
 textAlign:"center",
 color:"#6F7550",
-marginBottom:"60px"
+marginBottom:"70px"
 }}
 >
 
@@ -195,7 +195,7 @@ Conheça os personagens do Pomar
 style={{
 display:"flex",
 justifyContent:"center",
-gap:"25px",
+gap:"30px",
 flexWrap:"wrap"
 }}
 >
@@ -257,13 +257,13 @@ color:"#6F7550"
 
 <section
 style={{
-maxWidth:"1100px",
+maxWidth:"1300px",
 margin:"auto",
 background:"#FFF8F1",
-padding:"50px",
+padding:"65px",
 borderRadius:"35px",
 display:"flex",
-gap:"40px",
+gap:"50px",
 alignItems:"center",
 flexWrap:"wrap"
 }}
@@ -286,7 +286,7 @@ borderRadius:"30px"
 
 <h2
 style={{
-fontSize:"clamp(42px,10vw,62px)",
+fontSize:"62px",
 color:"#6F7550"
 }}
 >
@@ -298,8 +298,8 @@ Conheça a Dona Pomar
 <p
 style={{
 fontSize:"24px",
-lineHeight:"1.8",
-maxWidth:"700px"
+lineHeight:"1.9",
+maxWidth:"850px"
 }}
 >
 
@@ -322,9 +322,9 @@ e carinho feito ponto a ponto.
 
 <footer
 style={{
-marginTop:"80px",
+marginTop:"90px",
 background:"#6F7550",
-padding:"45px",
+padding:"50px",
 color:"white",
 textAlign:"center"
 }}
@@ -342,7 +342,8 @@ Pomar de Pano
 
 <p>
 
-Bonecas artesanais feitas à mão.
+Bonecas artesanais feitas à mão
+com afeto e memória.
 
 </p>
 
