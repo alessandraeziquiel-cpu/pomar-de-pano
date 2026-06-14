@@ -14,8 +14,6 @@ Conheça os personagens do Pomar
 
 </h2>
 
-
-
 {/* TÍTULO DONA POMAR */}
 
 <h2
@@ -31,27 +29,27 @@ Conheça a Dona Pomar
 
 </h2>
 
-
-
 {/* AJUSTE SOMENTE MOBILE */}
 
 <style jsx>{`
 @media (max-width:768px){
 
 .personagensTitulo{
-font-size:20px !important;
+font-size:32px !important;
 line-height:1.2 !important;
-max-width:220px !important;
-margin:0 auto 22px auto !important;
+max-width:320px !important;
+margin:0 auto 30px auto !important;
 text-align:center !important;
+padding:0 12px !important;
 }
 
 .donaTitulo{
-font-size:22px !important;
+font-size:34px !important;
 line-height:1.2 !important;
-max-width:220px !important;
-margin:0 auto 18px auto !important;
+max-width:320px !important;
+margin:0 auto 24px auto !important;
 text-align:center !important;
+padding:0 12px !important;
 }
 
 }
